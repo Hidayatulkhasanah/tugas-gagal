@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
@@ -13,6 +13,21 @@ class HomeController extends Controller
     {
         $magang = User::get();
 
+foreach ($magang as $d)
+
+
         return view('index', compact('magang'));
+    }
+
+    public function bagian1() {
+        return 'hello world';
+    }
+
+    public function bagian2() {
+        return 'ini halaman home bagian 2';
+    }
+
+    public function bagian3() {
+        return 'ini halaman home bagian 3';
     }
 }

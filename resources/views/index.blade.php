@@ -12,14 +12,16 @@
             <tr>
                 <td>Nama</td>
                 <td>Email</td></tr>
+            </table>
 
-                @foreach ($magang as $d)
+                @foreach ($magang as $row)
+                    <table>
                     <tr>
-                        <td>{{ $magang->name }}</td>
-                        <td>{{ $magang->email }}</td>
+                        <td>{{ $row->name }}</td>
+                        <td>{{ $row->email }}</td>
                     </tr>
+                    </table>
                 @endforeach
-        </table>
     </div>
 </body>
 </html>
