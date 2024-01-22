@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Dasboard</title>
 </head>
 <body>
     <div class="container">
@@ -14,11 +14,11 @@
                 <td>Email</td></tr>
             </table>
 
-                @foreach ($magang as $row)
+                @foreach ($magang as $d)
                     <table>
                     <tr>
-                        <td>{{ $row->name }}</td>
-                        <td>{{ $row->email }}</td>
+                        <td>{{ $d->name }}</td>
+                        <td>{{ $d->email }}</td>
                     </tr>
                     </table>
                 @endforeach

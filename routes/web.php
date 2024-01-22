@@ -45,3 +45,6 @@ Route::get('/about', function () { // yg ini route about, ini diakses kalo url k
 // Route::get('/about', function () {
 //     return view('about');
 // });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
