@@ -13,23 +13,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <title>Daily Hida | {{ $title }} </title>
 </head>
 
 <body>
-    <main>
-        <header>
-            @include('pelanggan.component.navbar')
-        </header>
-        <section>
-            @yield('content')
-        </section>
-        <footer>
-            <div class="container">
-                @include('pelanggan.component.footer')
-            </div>
-        </footer>
+  
+
+    <header>
+        @include('pelanggan.component.navbar')
+    </header>
+    <section>
+        @yield('content')
+    </section>
+    <footer>
+        <div class="container">
+            @include('pelanggan.component.footer')
+        </div>
+    </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
