@@ -24,13 +24,6 @@ class Controller extends BaseController
         ]);
     }
 
-    public function transaksi()
-    {
-        return view('pelanggan.page.transaksi', [
-            'title' => 'Transaksi',
-        ]);
-    }
-
     public function contact()
     {
         return view('pelanggan.page.contact', [

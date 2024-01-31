@@ -57,7 +57,7 @@
                         <label for="email" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="email" value=""
-                                placeholder="Masukan Email Anda">
+                                placeholder="Masukan Email Anda" required>
                         </div>
                     </div>
 
@@ -65,7 +65,8 @@
                         <label for="pesan" class="col-sm-2 col-form-label">Pesan</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="pesan" value=""
-                                placeholder="Masukan Pesan Anda">
+                                placeholder="Masukan Pesan Anda" required>
+                            </div>
                         </div>
                     </div>
                     <button class="btn btn-primary mt-4 w-100">Kirim</button>
